@@ -1,5 +1,5 @@
 const popupElem = document.querySelector('.popup')
-const popupImg = document.querySelector('.popup')
+const popupImg = document.querySelector('.popup__image')
 
 function openPopup(src) {
   popupImg.src = src;
