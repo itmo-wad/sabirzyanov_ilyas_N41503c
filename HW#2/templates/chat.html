@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta
+    name='viewport'
+    content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'
+  >
+  <link  rel='stylesheet' href='static/css/chat.css' />
+  <meta
+    http-equiv='X-UA-Compatible'
+    content='ie=edge'
+  >
+  <title>Document</title>
+</head>
+<body>
+  <div class='wrap'>
+    <div class='content'>
+      <h1>Chat</h1>
+      <div class='chat_content'>
+        {% for message in messages %}
+        <div class='message {{message.author}}'>{{ message.message }}</div>
+        {% endfor %}
+      </div>
+      <form method='post' >
+        <label>
+          Enter your message:
+          <input type='text' name='message'/>
+        </label>
+        <button type='submit'>Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

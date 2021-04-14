@@ -6,7 +6,7 @@
     name='viewport'
     content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'
   >
-  <link  rel='stylesheet' href='./style.css' />
+  <link  rel='stylesheet' href='static/css/style.css' />
   <meta
     http-equiv='X-UA-Compatible'
     content='ie=edge'
@@ -19,29 +19,29 @@
       <h1>Image gallery</h1>
       <div class='image_container'>
         <div>
-          <img onclick={openPopup(this.src)} src='assets/pics/pic1.png' alt='pic' />
+          <img onclick={openPopup(this.src)} src='img/pic1.png' alt='pic' />
         </div>
         <div>
-          <img onclick={openPopup(this.src)} src='assets/pics/pic1.png' alt='pic' />
+          <img onclick={openPopup(this.src)} src='img/pic1.png' alt='pic' />
         </div>
         <div>
-          <img onclick={openPopup(this.src)} src='assets/pics/pic1.png' alt='pic' />
+          <img onclick={openPopup(this.src)} src='img/pic1.png' alt='pic' />
         </div>
         <div>
-          <img onclick={openPopup(this.src)} src='assets/pics/pic1.png' alt='pic' />
+          <img onclick={openPopup(this.src)} src='img/pic1.png' alt='pic' />
         </div>
         <div>
-          <img onclick={openPopup(this.src)} src='assets/pics/pic1.png' alt='pic' />
+          <img onclick={openPopup(this.src)} src='img/pic1.png' alt='pic' />
         </div>
       </div>
     </div>
   </div>
   <div class='popup'>
     <div class='popup__content'>
-      <img onclick={closePopup()} src='./assets/pics/close.svg' alt='close' class='popup__close'>
+      <img onclick={closePopup()} src='img/close.svg' alt='close' class='popup__close'>
       <img class='popup__image' alt='large image'>
     </div>
   </div>
-  <script src='index.js'></script>
+  <script src='static/js/index.js'></script>
 </body>
 </html>
